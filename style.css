@@ -4,7 +4,7 @@
     --c-Orange: #FC7614;
     --c-PureWhite:white;
     --c-VeryDarkBlue: #131518;
-    --g-1: radial-gradient(#232A34, #181E27);
+    --g-1: radial-gradient(circle, #232A34 0%, #181E27 100%);
 }
 
 html {
@@ -18,6 +18,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0 7%;
+    min-height: 100vh;
+    background-color: #1E1E1E;
 }
 
 * {
@@ -52,8 +54,83 @@ body {
 .c__btn {
     color: var(--c-VeryDarkBlue);
     text-transform: uppercase;
+    font-weight: bold;
 }
 
+
+/* Layout */
+
+.c {
+    background: var(--g-1);
+    border-radius: 15px;
+    padding: 1.71em;
+    max-width: 412px;
+}
+.c__star-container {
+    padding: .92em;
+    background-color: var(--c-DarkBlue);
+    width: fit-content;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c__star-icon 
+{
+    width: 14px;
+    height: 14px;
+}
+
+.c__ratings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.2em;
+}
+
+.c__rating-container {
+    width: 50px;
+    height: 50px;
+    background-color: var(--c-DarkBlue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 300ms;
+    cursor: pointer;
+}
+
+.c__rating-container:hover {
+    background-color: var(--c-Orange);
+}
+
+.c__rating-container.selected 
+{
+    background-color: var(--c-PureWhite);
+}
+
+.c__rating-container:hover, .c__rating-container.selected 
+{
+    color: var(--c-DarkBlue);
+}
+
+
+.c__btn 
+{
+    background-color: var(--c-Orange);
+    border: none;
+    padding: 1.07em;
+    width: 100%;
+    border-radius: 22px;
+    transition: background-color 300ms;
+    cursor: pointer;
+}
+
+.c__btn:hover 
+{
+    background-color: var(--c-PureWhite);
+}
 @media (min-width: 768px)
 {
     /*Typography*/
@@ -64,5 +141,13 @@ body {
     .c h1 
     {
         font-size: 1.86rem;
+    }
+
+
+    /* Layout */ 
+    
+    .c 
+    {
+        padding: 2.13em;
     }
 }
