@@ -32,3 +32,37 @@ body {
 {
     margin-bottom: 0;
 }
+
+
+/* Tyopgraphy */ 
+.c
+{
+    font-family: "Overpass", sans-serif;
+    line-height: 1.6;
+    color: var(--c-LightGrey);
+}
+
+.c h1 
+{
+    font-size: 1.71rem;
+    color: var(--c-PureWhite);
+}
+
+
+.c__btn {
+    color: var(--c-VeryDarkBlue);
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px)
+{
+    /*Typography*/
+    html {
+        font-size: 15px;
+    }
+
+    .c h1 
+    {
+        font-size: 1.86rem;
+    }
+}
