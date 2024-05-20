@@ -1,0 +1,34 @@
+:root {
+    --c-DarkBlue: #262E38;
+    --c-LightGrey: #969FAD;
+    --c-Orange: #FC7614;
+    --c-PureWhite:white;
+    --c-VeryDarkBlue: #131518;
+    --g-1: radial-gradient(#232A34, #181E27);
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* :first-child {
+    margin-top: 0;
+}
+
+* :last-child
+{
+    margin-bottom: 0;
+}
