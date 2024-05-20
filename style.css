@@ -131,6 +131,23 @@ body {
 {
     background-color: var(--c-PureWhite);
 }
+
+
+
+.c.thanks {
+    text-align: center;
+}
+
+.c__thanks__selected 
+{
+    color: var(--c-Orange);
+    background-color: var(--c-DarkBlue);
+    border-radius: 22px;
+    padding: .33em .85em;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
 @media (min-width: 768px)
 {
     /*Typography*/
@@ -149,5 +166,9 @@ body {
     .c 
     {
         padding: 2.13em;
+    }
+
+    .c__btn {
+        padding: 1em;
     }
 }
